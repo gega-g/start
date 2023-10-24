@@ -8,6 +8,7 @@ b = []
 for i in a:
     if i < 5:
         b.append(i)
+        b.sort()
 print(b)
 
 #####################
@@ -19,4 +20,5 @@ num = int(input("input number:"))
 for i in a:
     if i < num:
         b.append(i)
+        b.sort()
 print(b)
