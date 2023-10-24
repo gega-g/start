@@ -1,0 +1,25 @@
+## Practice Problem From https://www.practicepython.org/exercise/2014/01/29/01-character-input.html
+## Create a program that asks the user to enter their name and their age. Print out a message addressed to them that
+## tells them the year that they will turn 100 years old.
+
+# this program asks user about their age and name
+name = input("input your name:")
+age = int(input("input your age:"))
+
+# this program removes whitespaces from the str
+name = name.strip()
+
+# this program capitalizes user name
+name = name.title()
+
+# this program calculates their birth date
+birth_date = 2023 - age
+
+# this program calculates the year they will be 100 years old
+last_age = birth_date + 100
+answ = f"{name} you will be 100 years old in {last_age}"
+
+# this program asks about number of copies that the program will return
+duply = int(input("how many copies should I print?"))
+duplycated_answ = (answ +"\n") * duply
+print(duplycated_answ)
