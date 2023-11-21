@@ -1,0 +1,13 @@
+# rock paper scissors between 2 players
+player1 = input("Player 1 choice is:")
+player2 = input("Player 2 choice is:")
+if player1 == player2:
+    print("its a draw")
+elif player1 == "rock" and player2 == "scissors":
+    print("Player 1 won")
+elif player1 == "paper" and player2 == "rock":
+    print("Player 1 won")
+elif player1 == "scissors" and player2 == "paper":
+    print("Player 1 won")
+else:
+    print("Player 2 won")
