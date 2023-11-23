@@ -2,14 +2,17 @@
 # whether this string is a palindrome or not.
 # (A palindrome is a string that reads the same forwards and backwards.)
 
-string = input("input word:")
 
-# get first and last letters
-first = string[0]
-last = string[-1]
+
+# define what a palindrome means
+def palindrome(word):
+    reversed = word[::-1]
 
 # compare them and tell if it is or isn't palindrome
-if first == last:
-    print("this word is a palindrome")
-else:
-    print("this word is not a palindrome")
+    if reversed == word:
+        print("this word is a palindrome")
+    else:
+        print("its not")
+
+# check the word
+palindrome(word=input("Input word:"))
